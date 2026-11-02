@@ -1,3 +1,5 @@
+# this file is used to roughly measure the scale and position of the coral mesh, 
+# so that it can be aligned with the ground truth scan
 import numpy as np, open3d as o3d
 gt  = o3d.io.read_triangle_mesh("EXSCAN.ply")
 rec = o3d.io.read_triangle_mesh("coral_clean.ply")

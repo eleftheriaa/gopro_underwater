@@ -2,6 +2,12 @@
 
 This project explores 3D reconstruction of an underwater coral specimen using photogrammetry and Gaussian Splatting. It compares Meshroom, Splatfacto (Nerfstudio), and SeaFree-GS.
 
+## Project Workflow
+
+The following diagram illustrates the complete project pipeline, from image acquisition to geometric comparison.
+
+![Project Workflow](docs/coral_reconstruction_method_diagram.png)
+
 ### Repository Structure
 
 ```text

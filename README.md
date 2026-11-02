@@ -59,7 +59,7 @@ Each model contains the following binary files:
 The three main files are `cameras.bin`, `images.bin`, and `points3D.bin`. Together, they describe the camera calibration, camera poses, and sparse 3D point cloud used by subsequent reconstruction methods.
 
 ### Meshroom
-Meshroom was used as an additional photogrammetry workflow. The project files, processing cache, and reconstruction outputs are included in the repository. Use the images provided to create a dense reconstuction, and export the mesh usign the `.ply` output format.
+Meshroom was used as an additional photogrammetry workflow. The project files, processing cache, and reconstruction outputs are included in the repository. Download it from: https://meshroom.org/ and use the images provided to create a dense reconstuction, and export the mesh using the `.ply` output format.
 
 ### Gaussian Splatting
 Two existing implementations were used for Gaussian Splatting:

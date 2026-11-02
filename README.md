@@ -8,19 +8,18 @@ This project explores 3D reconstruction of an underwater coral specimen using ph
 gopro_underwater/
 ├── docs/                    # Documentation and supporting material
 ├── images/                  # Original input images
-├── meshroom/                # Meshroom project files and cache
 ├── ply_comparison/          # Point cloud comparison results
 │   ├── compare.py           # rough measurement of the coral
 │   └── compare_coral.py     # align meshes and compare
 ├──  tsdf/                   # TSDF reconstruction outputs
 │   ├── clean_mesh.py        # clean mesh after tsdf fusion
 │   └── tsdf_export.py       # uses tsdf fusion
-├──  coral_instructions.txt     
-├──  export_seafree-gs.py     
-├──  export_splats.py
-├──  feature_matching.py   
-├──  sphere.py
-└──  splatfacto.py 
+├── coral_instructions.txt   # Instructions for FFmpeg frame extraction and COLMAP commands
+├── export_seafree-gs.py     # Script for exporting a .ply for the SeaFree-GS model
+├── export_splats.py         # Script for exporting a .ply for the splatfacto model
+├── feature_matching.py      # Script to visualise the feature matching after running colmap instructions
+├── sphere.py                # Cleans everything below a certain radius, exports a cleaned mesh, .ply 
+└── splatfacto.py            # Script related to the Splatfacto configuration, runs the model
    
 ```
 ## Prerequisites
@@ -52,10 +51,10 @@ Each model contains the following binary files:
 - `rigs.bin`: Stores camera rig information.
 
 The three main files are `cameras.bin`, `images.bin`, and `points3D.bin`. Together, they describe the camera calibration, camera poses, and sparse 3D point cloud used by subsequent reconstruction methods.
-```
+
 ### Meshroom
-Meshroom was used as an additional photogrammetry workflow. The project files, processing cache, and reconstruction outputs are included in the repository.
-```
+Meshroom was used as an additional photogrammetry workflow. The project files, processing cache, and reconstruction outputs are included in the repository. Use the images provided to create a dense reconstuction, and export the mesh usign the `.ply` output format.
+
 ### Gaussian Splatting
 Two existing implementations were used for Gaussian Splatting:
 - Nerfstudio (Splatfacto): https://github.com/nerfstudio-project/nerfstudio

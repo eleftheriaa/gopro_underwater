@@ -1,0 +1,19 @@
+
+
+
+% for the dataset (video -> sample frames)
+% (nn2026) C:\Users\30697>ffmpeg -version
+% ffmpeg version 8.0
+ffmpeg -i "GX011004.mp4" -vf fps=2 "frame_%03d.png"
+
+% colmap 
+
+conda create -n colmap -c conda-forge colmap
+conda activate colmap
+
+
+colmap feature_extractor --database_path database.db --image_path images --FeatureExtraction.use_gpu 0 --FeatureExtraction.num_threads 4 --ImageReader.single_camera 1 --ImageReader.camera_model SIMPLE_RADIAL --SiftExtraction.max_num_features 8192 --SiftExtraction.estimate_affine_shape 1 --SiftExtraction.domain_size_pooling 1
+
+colmap exhaustive_matcher --database_path database.db --FeatureMatching.use_gpu 0 --FeatureMatching.num_threads 4  --SiftMatching.max_ratio 0.8 
+
+colmap mapper --database_path database.db --image_path images --output_path sparse 

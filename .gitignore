@@ -6,6 +6,7 @@ outputs/
 *.db
 *.json
 *.mp4
+colmap/
 splats/
 reproj_check/
 renders/

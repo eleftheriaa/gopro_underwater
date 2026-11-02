@@ -1,5 +1,4 @@
-# Underwater Coral 3D Reconstruction:
-# Photogrammetry vs Gaussian Splatting
+# Underwater Coral 3D Reconstruction: Photogrammetry vs Gaussian Splatting
 
 Comparing photogrammetry and Gaussian splatting for underwater coral shape, using a structured light 3D scan as the reference.
 
@@ -17,7 +16,7 @@ Questions:
 
 ## Method overview
 
-![Method diagram](docs/)
+![Method diagram](docs/coral_reconstruction_method_diagram.png)
 
 TODO: add the diagram image to `docs/method_diagram.png`.
 

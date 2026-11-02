@@ -15,7 +15,6 @@ images_2/
 images_4/
 __pycache__/
 MeshroomCache/
-meshroom/meshroomCache/
 *.stl
 *.STL
 meshroom/

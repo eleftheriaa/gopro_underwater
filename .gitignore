@@ -12,7 +12,6 @@ renders/
 ply_comparison/results/
 images_2/
 images_4/
-images/
 __pycache__/
 MeshroomCache/
 meshroom/meshroomCache/

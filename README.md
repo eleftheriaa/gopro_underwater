@@ -66,5 +66,4 @@ Two existing implementations were used for Gaussian Splatting:
 - Nerfstudio (Splatfacto): https://github.com/nerfstudio-project/nerfstudio
 - SeaFree-GS: https://github.com/deng-ai-lab/SeaFree-GS
 For installation and setup, refer to the instructions in the original repositories.
-### Results
-The outputs/, renders/, and ply_comparison/ folders contain the reconstruction results and evaluation outputs.
+

@@ -6,6 +6,8 @@ outputs/
 *.db
 *.json
 *.mp4
+*.stl
+
 colmap/
 splats/
 reproj_check/
@@ -15,6 +17,5 @@ images_2/
 images_4/
 __pycache__/
 MeshroomCache/
-*.stl
-*.STL
+matches/
 meshroom/
